@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Meeting Minutes</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  </head>
+  <body>
+    <header> 
+        <div>Meeting 2</div>
+        <nav>
+            <ul>
+            <li><a href="#attendance">Attendance</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#review">Review</a></li>
+            <li><a href="#notes">Notes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <h1> <span>To-Do List Brainstorming Session</span> </h1>
+
+      <h3> <i>April 10, 2024 -- Catalyst Building</i> </h3>
+
+      <img 
+        class="fit-picture"
+        src="catalyst.jpeg"
+        alt="Catalyst building at UCSD"
+        height=200/>
+
+      <section>
+        <h2 id="attendance">Attendance</h2>
+        <ul>
+          <li><input type="checkbox" /> Alice</li>
+          <li><input type="checkbox" /> Bob</li>
+          <li><input type="checkbox" /> Charlie</li>
+          <li><input type="checkbox" /> Daisy</li>
+          <li><input type="checkbox" /> Edward</li>
+          <li><input type="checkbox" /> Fiona</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="agenda">Agenda</h2>
+        <ol>
+          <li>Take attendance</li>
+          <li>Review what we discussed last time</li>
+          <li>Brainstorm UI elements we want to use</li>
+          <li>Decide on layout for app</li>
+          <li>Divide tasks</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2 id="review">Review</h2>
+        <p>
+          Last time, we met to discuss the different specifications and requirements 
+          we needed for the assignment, and decided that <strong>we needed to first 
+          focus on determining how the app will look.</strong>
+        </p>
+      </section>
+
+      <section>
+        <h2 id="notes">Notes</h2>
+        
+        <p>
+          We brainstormed many different <b>UI elements</b> we wanted. We wanted to have 3 
+          different buttons, a system to track due dates, and a method to trash old tasks. <br />
+        </p>
+
+        <hr />
+
+        <p>
+          Next, we deliberated on the layout of the app. We decided where the buttons and 
+          lists should go. We then <em>split up the work</em> between everyone. <br />
+        </p>
+
+      </section>
+
+      <section>
+        
+        <figure>
+          <figcaption>Listen to this very pertinent audio:</figcaption>
+          <audio controls src="I GET OUT BED.mp3"></audio>
+          <a href="I GET OUT BED.mp3"> Download audio </a>
+        </figure>
+
+      </section>
+
+      <section>
+
+        <video controls width="250">
+          <source src="I GET OUT BED.mp4" type="video/mp4" />
+        
+        </video>
+
+      </section>
+
+      <br />
+      <details>
+        <summary>Don't click</summary>
+        You just lost the game :o
+      </details>
+
+      <br />
+      <form>
+        <fieldset>
+          <legend>Choose your favorite color</legend>
+      
+          <input type="radio" value="R"/>
+          <label>Red</label><br />
+      
+          <input type="radio" value="Y"/>
+          <label>Yellow</label><br />
+      
+          <input type="radio" value="G"/>
+          <label>Green</label><br />
+
+          <input type="radio" value="B"/>
+          <label>Blue</label><br />
+        </fieldset>
+      </form>
+      
+    </main>
+
+    <footer>
+
+      <form onsubmit="alert('Subscribed')">
+        <input type="text" placeholder="Enter Email Address" />
+        <input type="date" placeholder="mm/dd/yyy" />
+        <button>Submit</button>
+      </form>
+      <br />
+
+      <label for="feedback">Have any feedback?</label> <br />
+
+      <textarea id="story" name="story" rows="5" cols="33">Enter here</textarea> 
+      <br />
+
+      <label for="favorite-person">Choose your favorite team member:</label>
+      <input list="favorite-people" id="favorite-person" name="favorite-person" />
+
+      <datalist id="favorite-people">
+        <option value="Alice"></option>
+        <option value="Bob"></option>
+        <option value="Charlie"></option>
+        <option value="Daisy"></option>
+        <option value="Edward"></option>
+        <option value="Fiona"></option>
+      </datalist>
+      <br />
+
+      <label for="season-select">Choose a season:</label>
+
+      <select name="seasons" id="season-select">
+        <option value="">--Please choose an option--</option>
+        <option value="winter">Winter</option>
+        <option value="spring">Spring</option>
+        <option value="summer">Summer</option>
+        <option value="autumn">Autumn</option>
+      </select>
+
+
+    </footer>
+  </body>
+</html>
