@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="UTF-8">
     <title>Meeting Minutes</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <header> 
-        <div>Meeting 2</div>
-        <nav>
-            <ul>
-            <li><a href="#attendance">Attendance</a></li>
-            <li><a href="#agenda">Agenda</a></li>
-            <li><a href="#review">Review</a></li>
-            <li><a href="#notes">Notes</a></li>
-            </ul>
-        </nav>
+
+      <div>Meeting 2</div>
+      <nav>
+          <div class="containerr">
+            <div class="item" id="item1"><a href="#attendance">Attendance</a></div>
+            <div class="item" id="item2"><a href="#agenda">Agenda</a></div>
+            <div class="item" id="item3"><a href="#review">Review</a></div>
+            <div class="item" id="item4"><a href="#notes">Notes</a></div>
+          </div>
+      </nav>
+
     </header>
     <main>
       <h1> <span>To-Do List Brainstorming Session</span> </h1>
@@ -37,7 +43,7 @@
           <li><input type="checkbox"> Alice</li>
           <li><input type="checkbox"> Bob</li>
           <li><input type="checkbox"> Charlie</li>
-          <li><input type="checkbox"> Daisy</li>
+          <li class="a"><input type="checkbox"> Daisy</li>
           <li><input type="checkbox"> Edward</li>
           <li><input type="checkbox"> Fiona</li>
         </ul>
@@ -81,7 +87,7 @@
       </section>
 
       <section>
-        <div>audio file</div>
+        <p>audio file</p>
         <figure>
           <figcaption>Listen to this very pertinent audio:</figcaption>
           <audio controls src="I-GET-OUT-BED.mp3"></audio>
@@ -91,7 +97,7 @@
       </section>
 
       <section>
-        <div>video file</div>
+        <p>video file</p>
         <video controls width="250">
           <source src="I-GET-OUT-BED.mp4" type="video/mp4">
         
@@ -99,70 +105,75 @@
 
       </section>
 
-      <br>
-      <details>
-        <summary>Don't click</summary>
-        You just lost the game :o
-      </details>
+      <section>
+        <br>
+        <details>
+          <summary>Don't click</summary>
+          You just lost the game :o
+        </details>
 
-      <br>
-      <form>
-        <fieldset>
-          <legend>Choose your favorite color</legend>
-      
-          <input type="radio" value="R">
-          <label>Red</label><br>
-      
-          <input type="radio" value="Y">
-          <label>Yellow</label><br>
-      
-          <input type="radio" value="G">
-          <label>Green</label><br>
+        <br>
+        <form>
+          <fieldset>
+            <legend>Choose your favorite color</legend>
+        
+            <input type="radio" value="R">
+            <label>Red</label><br>
+        
+            <input type="radio" value="Y">
+            <label>Yellow</label><br>
+        
+            <input type="radio" value="G">
+            <label>Green</label><br>
 
-          <input type="radio" value="B">
-          <label>Blue</label><br>
-        </fieldset>
-      </form>
-      
+            <input type="radio" value="B">
+            <label>Blue</label><br>
+          </fieldset>
+        </form>
+
+        <form onsubmit="alert('Subscribed')">
+          <input type="text" placeholder="Enter Email Address">
+          <input type="date">
+          <button class="submitBtn">Submit</button>
+        </form>
+
+      </section>
     </main>
 
     <footer>
 
-      <form onsubmit="alert('Subscribed')">
-        <input type="text" placeholder="Enter Email Address">
-        <input type="date">
-        <button>Submit</button>
-      </form>
-      <br>
+      <div class="container">
+        
+        <div class="boxx" id="box1">
+          <label>Have any feedback?</label> <br>
+          <textarea id="story" name="story" rows="5" cols="33">Enter here</textarea> 
+        </div>
 
-      <label>Have any feedback?</label> <br>
+        <div class="boxx" id="box2">
+          <label for="favorite-person">Choose your favorite team member:</label>
+          <input list="favorite-people" id="favorite-person" name="favorite-person">
+          <datalist id="favorite-people">
+            <option value="Alice"></option>
+            <option value="Bob"></option>
+            <option value="Charlie"></option>
+            <option value="Daisy"></option>
+            <option value="Edward"></option>
+            <option value="Fiona"></option>
+          </datalist>
+        </div>
 
-      <textarea id="story" name="story" rows="5" cols="33">Enter here</textarea> 
-      <br>
+        <div class="boxx" id="box3">
+          <label for="season-select">Choose a season:</label>
+          <select name="seasons" id="season-select">
+            <option value="">--Please choose an option--</option>
+            <option value="winter">Winter</option>
+            <option value="spring">Spring</option>
+            <option value="summer">Summer</option>
+            <option value="autumn">Autumn</option>
+          </select>
+        </div>
 
-      <label for="favorite-person">Choose your favorite team member:</label>
-      <input list="favorite-people" id="favorite-person" name="favorite-person">
-
-      <datalist id="favorite-people">
-        <option value="Alice"></option>
-        <option value="Bob"></option>
-        <option value="Charlie"></option>
-        <option value="Daisy"></option>
-        <option value="Edward"></option>
-        <option value="Fiona"></option>
-      </datalist>
-      <br>
-
-      <label for="season-select">Choose a season:</label>
-
-      <select name="seasons" id="season-select">
-        <option value="">--Please choose an option--</option>
-        <option value="winter">Winter</option>
-        <option value="spring">Spring</option>
-        <option value="summer">Summer</option>
-        <option value="autumn">Autumn</option>
-      </select>
-
+      </div>
 
     </footer>
   </body>
