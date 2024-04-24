@@ -35,6 +35,7 @@
     justify-self: center;
 }
 
+
 head {
     display: none;
 }
@@ -111,6 +112,7 @@ img {
 .submitBtn:active{
     box-shadow: 2px 2px 5px grey;
 }
+
 textarea {
     height: 10vh;
     width: 25vw;
@@ -161,3 +163,4 @@ h2 + p {
 h1:has(+ h3) {
     color: rgb(228, 60, 18);
 }
+
